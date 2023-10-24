@@ -5,6 +5,7 @@ from source.logger import logging
 from source.exception import CustomException
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
+#main puprose of these file is to collect data from different types of souces
 
 @dataclass
 class DataIngestionConfig:
