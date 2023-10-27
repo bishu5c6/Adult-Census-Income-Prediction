@@ -5,6 +5,7 @@ from source.logger import logging
 from source.exception import CustomException
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
+from source.components.data_transformation import DataTransformation
 #main puprose of these file is to collect data from different types of souces
 
 @dataclass
@@ -47,10 +48,20 @@ class DataIngestion:
             logging.info('error occured in data ingestion')
             raise CustomException(e, sys)
 
-
+'''
+below code is for only data transformation
 if __name__ == '__main__':
     obj = DataIngestion()
     obj.initiate_data_ingestion()
+'''
+if __name__ =="__main__":
+    obj = DataIngestion()
+    train_data_path , test_data_path = obj.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    train_arr, test_arr, _ = data_transformation.inititate_data_transformation(train_data_path , test_data_path)
+
+
 
 
 #python source\components\data_ingestion.py
