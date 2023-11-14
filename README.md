@@ -24,6 +24,8 @@ go to your web browser and type
 
 '''
 localhost : 5000
-
 '''
 ![Alt text](image.png)
+
+outputimage
+![Alt text](image-1.png)
