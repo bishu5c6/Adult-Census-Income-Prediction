@@ -22,9 +22,9 @@ python app.py
 '''
 go to your web browser and type
 
-'''
+"""
 localhost : 5000
-'''
+"""
 ![Alt text](image.png)
 
 outputimage
